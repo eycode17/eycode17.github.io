@@ -78,8 +78,16 @@
 
     <footer>
         <div class="buttons">
-            <button onclick="window.location.href='/oscss';">OSCSS (Açık Kaynaklı Kod Paylaşma Sitesi)</button>
+            <button onclick="downloadFile()">OSCSS İndir</button>
         </div>
     </footer>
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = 'https://eycode17.github.io/setup.exe'; // İndirilecek dosyanın URL'sini buraya ekleyin
+            link.download = 'setup.exe'; // İndirilen dosyanın adı
+            link.click();
+        }
+    </script>
 </body>
 </html>
